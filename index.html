@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- Для iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Для Android -->
+    <meta name="theme-color" content="#4C3D74" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#4C3D74" media="(prefers-color-scheme: dark)">
+
+    <title>Онлайн-интенсив по наращиванию ресниц</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./images/icons/favicon.svg" />
+    <link rel="shortcut icon" href="./images/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="./images/icons/site.webmanifest" />
+
+    <!-- Для иконок с сайта Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Подключенные файлы CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+    <!-- Анимация загрузки -->
+    <div class="preloader">
+        <div class="mascara-container">
+            
+            <div class="mascara-bottle"></div>
+            
+            
+            <div class="mascara-cap"></div>
+            
+            
+            <div class="mascara-brush">
+                <div class="brush-handle">
+                    <div class="brush-head"></div>
+                    <div class="brush-bristles"></div>
+                </div>
+            </div>
+            
+            
+            <div class="mascara-drops">
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+            </div>
+            
+            
+            <div class="loading-text">Наносим тушь...</div>
+        </div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="index.html" class="logo">Интенсив <br class="br"> Юлии Ворман</a>
+                </div>
+
+                <!-- Бургер-меню с SVG -->
+                <button class="burger-menu" id="burgerMenu" aria-label="Открыть меню">
+                    <!-- SVG для меню (бургер) -->
+                    <svg class="burger-icon menu-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                    </svg>
+                
+                    <!-- SVG для закрытия (крестик) -->
+                    <svg class="burger-icon close-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </button>
+
+                <nav class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__list"><a href="#for-whom" class="nav__item">Для кого?</a></li>
+                        <li class="nav__list"><a href="#program" class="nav__item">Что будет на интенсиве?</a></li>
+                        <li class="nav__list"><a href="#about" class="nav__item">О Юлии</a></li>
+                        <li class="nav__list"><a href="#pricing" class="nav__item">Тарифы</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+        
+    <!-- Главный экран -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner__info">
+                <p class="banner__mini--title">Первый в мире интенсив</p>
+                <h1 class="banner__title">По скоростному наращиванию ресниц</h1>
+                <p class="banner__desc">Хочешь наращивать 4D за 1 час? Научу тебя на интенсиве 29 марта</p>
+                <div class="btn__container">
+                    <a href="#pricing" class="button" aria-label="Sign up">Предзапись</a>
+                    <a href="#list__lessons" class="btn" aria-label="Program">Программа</a>
+                </div>
+            </div>
+
+            <div class="banner__img">
+                <img src="./images/main/Ellipse.png" class="bg-effect" alt="Effect" width="830" height="941" decoding="async">
+                <img src="./images/main/banner.png" alt="Happy__woman" class="images" width="1024" height="1024" fetchpriority="high" decoding="async">
+            </div>
+        </div>
+    </section>
+
+    <!-- Для кого? -->
+    <section class="for-whom" id="for-whom">
+        <div class="container">
+            <div class="for-whom__content">
+                <h2 class="for-whom__title">Тебе на интенсив если ты</h2>
+                <div class="for-whom__content--item">
+                
+                    <!-- Карточка 1 -->
+                    <div class="for-whom__card-wrapper">
+                        <div class="for-whom__card">
+                            <img src="./images/expectation/woman_frowning.png" alt="Печальная девушка" class="for-whom__images" width="84" height="84" loading="lazy" decoding="async">
+                            <p class="for-whom__desc">Лашмейкер, который делает наращивание <span class="for-whom__span">дольше одного часа?</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="for-whom__card-wrapper">
+                        <div class="for-whom__card">
+                            <img src="./images/expectation/woman_student.png" alt="Студентка" class="for-whom__images" width="84" height="84" loading="lazy" decoding="async">
+                            <p class="for-whom__desc">Мастер, который хочет <span class="for-whom__span">поменять мышление</span> о наращивании ресниц
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="for-whom__card-wrapper">
+                        <div class="for-whom__card">
+                            <img src="./images/expectation/woman_office-worker.png" alt="Девушка, работающая в офисе" class="for-whom__images" width="84" height="84" loading="lazy" decoding="async">
+                            <p class="for-whom__desc">Специалист, которому необходимы <span  class="for-whom__span">поддержка и комьюнити рядом</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="for-whom__content--items">
+                <p class="for-whom__text">Зарядись энергией и стань самым знаменитым мастером своего города</p>
+                <a href="#pricing" class="button__for-whom" aria-label="Sign up">Предзапись</a>
+                <img src="./images/main/super_woman.png" alt="Супер-девушка" class="super__woman--images" loading="lazy" width="243" height="243" decoding="async">
+            </div>
+        </div>
+    </section>
+
+    <!-- Что будет на интенсиве? -->
+    <section class="program" id="program">
+        <div class="container">
+            <div class="program__content">
+                <h2 class="program__content--title">На интенсиве тебя ждет</h2>
+            
+                <!-- ВСЕ элементы в одной grid-сетке -->
+                <div class="program__content--menu">
+                    <!-- Смайлы -->
+                    <div class="program__content--list">
+                        <img src="./images/expectation/star_struck.png" alt="Смайлик со звёздочками вместо глаз" class="program__images" width="58" height="58" loading="lazy" decoding="async">
+                        <p class="program__desc"><span class="program__span">9 уроков</span> с домашними заданиями и проверкой</p>
+                    </div>
+
+                    <div class="program__content--list">
+                        <img src="./images/expectation/smiling_with-heart-eyes.png" alt="Смайлик с влюблёнными глазами" class="program__images" width="58" height="58" loading="lazy" decoding="async">
+                        <p class="program__desc"><span class="program__span">Мастермаинды</span> с обсуждением вопросов</p>
+                    </div>
+
+                    <div class="program__content--list">
+                        <img src="./images/expectation/money_mouth-face.png" alt="Смайлик с долларами в глазах" class="program__images" width="58" height="58" loading="lazy" decoding="async">
+                        <p class="program__desc">Деление на пары и создание <span class="program__span">активного комьюнити</span></p>
+                    </div>
+
+                    <!-- Подарки -->
+                    <div class="program__content--list">
+                        <img src="./images/pricing_plans/gift.png" alt="Коробка подарок" class="program__images" width="58" height="58" loading="lazy" decoding="async">
+                        <p class="program__desc"><span class="program__span">Главный приз за активность на интенсиве</span></p>
+                    </div>
+
+                    <div class="program__content--list">
+                        <img src="./images/pricing_plans/gift.png" alt="Коробка подарок" class="program__images" width="58" height="58" loading="lazy" decoding="async">
+                        <p class="program__desc"><span class="program__span">Приз за работу для <br>самой активной пары</span></p>
+                    </div>
+
+                    <div class="program__content--list">
+                        <img src="./images/pricing_plans/gift.png" alt="Коробка подарок" class="program__images" width="58" height="58" loading="lazy" decoding="async">
+                        <p class="program__desc"><span class="program__span">Приз среди сторис с хештегом интенсива</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О Юлии Ворман -->
+    <section class="about">
+        <div class="container">
+            <div class="about__content" id="about">
+                <h2 class="about__title">И, конечно, Юлия Ворман</h2>
+                <p class="about__text"><span class="about__text--span">Больше 12 лет</span> я наращиваю ресницы <span class="about__text--span">за 1 час.</span> В профессии я развиваюсь <span class="about__text--span">с 2008 года</span> и, путём проб и ошибок, дошла <span class="about__text--span">до идеальных результатов!</span> Мои профессиональные навыки сделали меня <span class="about__text--span">многократным призёром,</span> а потом и <span class="about__text--span">судьёй международных чемпионатов по наращиванию ресниц.</span></p>
+
+                <p class="about__text--item">Я основала <span class="about__text--item--span">сеть салонов VERSUS</span> и теперь активно запускаю свои обучения <span class="about__text--item--span">по скоростному наращиванию.</span> Ломаю стереотипы, <span class="about__text--item--span">учу мастеров поднимать чеки и зарабатывать миллионы.</span></p>
+
+                <div class="indicators">
+                    <div class="row">
+                        <div class="indicator">
+                            <h4 class="indicator_title">1 ЧАС</h4>
+                            <p class="indicator_text">CAMOE БЫСТРОЕ 5D</p>
+                        </div>
+            
+                        <div class="indicator">
+                            <h4 class="indicator_title">12+ ЛЕТ</h4>
+                            <p class="indicator_text">РАБОТАЮ В СВОЕЙ СФЕРЕ</p>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="indicator">
+                            <h4 class="indicator_title">1+ МЛН</h4>
+                            <p class="indicator_text">В МЕСЯЦ ДЕЛАЮ НА РЕСНИЦАХ</p>
+                        </div>
+            
+                        <div class="indicator">
+                            <h4 class="indicator_title">100000+</h4>
+                            <p class="indicator_text">КЛИЕНТОК Я ОСЧАСТЛИВИЛА</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="about__text--footer">Все мои наращивания я делаю за 1 - максимум 1.5 часа <span class="about__text--footer--span"><br>Хочешь также? Смотри программу и записывайся на интенсив</span></p>
+            </div>
+            <img src="./images/main/Maria_Lyadova.jpg" alt="Maria_Lyadova" class="about__main--images" width="399" height="491" fetchpriority="high" decoding="async">
+        </div>
+    </section>
+
+    <!-- Лист уроков интенсива -->
+    <section class="list__lessons">
+        <div class="container">
+            <div class="list__lessons__content">
+                <h2 class="list__lessons--title">Вот такая программа интенсива</h2>
+            </div>
+
+            <div class="accordion" id="list__lessons">
+                
+                <!-- Урок 1 -->
+                <hr class="accordion-item1">
+                <div class="accordion-item">
+                    <input type="checkbox" id="lesson1" class="accordion-toggle">
+                    <label for="lesson1" class="accordion-label">
+                        <span class="lesson-title">Урок <span class="lesson--title--number">1.</span> Вводный урок</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>Проанализируем основные ошибки в оформлении профиля. <br>Научимся создавать качественную аватарку и понятную, привлекающую шапку. <br>Разберем, как организовать хайлайтсы, чтобы они работали на вас.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Урок 2 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="lesson2" class="accordion-toggle">
+                    <label for="lesson2" class="accordion-label">
+                        <span class="lesson-title">Урок <span class="lesson--title--number">2.</span> Скоростное снятие ресниц</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>Изучим профессиональные средства для безопасного и быстрого снятия ресниц. <br>Освоим технику аккуратного удаления без повреждения натуральных ресниц. <br>Разберем алгоритм действий, который позволит тратить на процедуру минимум времени.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Урок 3 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="lesson3" class="accordion-toggle">
+                    <label for="lesson3" class="accordion-label">
+                        <span class="lesson-title">Урок <span class="lesson--title--number">3.</span> Работа с клеем. Как продлить носку</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>Разберем виды клея: как выбрать идеальный состав под температуру и влажность в вашем кабинете. <br>Научимся правильной технике нанесения и дозировки клея, чтобы избежать склеек и обеспечить комфорт. <br>Изучим секреты подготовки натуральных ресниц, которые напрямую влияют на долговечность носки.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Урок 4 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="lesson4" class="accordion-toggle">
+                    <label for="lesson4" class="accordion-label">
+                        <span class="lesson-title">Урок <span class="lesson--title--number">4.</span> Здоровье мастера</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>Составим эргономичное расписание, чтобы избежать выгорания и равномерно распределять нагрузку. <br>Разберем упражнения для разминки спины, шеи и кистей рук до, после и во время процедуры. <br>Поговорим о важности правильного освещения и организации рабочего места для сохранения зрения и осанки.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Урок 5 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="lesson5" class="accordion-toggle">
+                    <label for="lesson5" class="accordion-label">
+                        <span class="lesson-title">Урок <span class="lesson--title--number">5.</span> Личный бренд В Instagram: почему увядают коммерческие аккаунты</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>Проанализируем главные ошибки: отсутствие личности в аккаунте и безликий контент. <br>Узнаем, как выстроить доверительные отношения с аудиторией через личную историю и экспертизу. <br>Научимся создавать контент-план, который отражает ваш уникальный подход к работе и привлекает идеальных клиентов.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Урок 6 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="lesson6" class="accordion-toggle">
+                    <label for="lesson6" class="accordion-label">
+                        <span class="lesson-title">Урок <span class="lesson--title--number">6.</span> Ломаем стереотипы моделирования: чем сложнее придумал, тем сложнее жить</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>Убедимся, что красиво — не значит сложно: как простота в моделировании выигрывает у вычурных дизайнов. <br>Научимся работать с природными данными клиента, чтобы подчеркнуть достоинства, а не маскировать их. <br>Разберем несколько универсальных и эффектных моделей, которые экономят время и всегда смотрятся выигрышно.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Урок 7 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="lesson7" class="accordion-toggle">
+                    <label for="lesson7" class="accordion-label">
+                        <span class="lesson-title">Урок <span class="lesson--title--number">7.</span> Классическое наращивание ресниц</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>Отточим идеальную технику изоляции: отработаем движения до автоматизма для безупречного результата. <br>Разберем правила подбора длины и толщины реснички под природные данные клиента. <br>Узнаем, как добиться максимальной чистоты и аккуратности в классическом наращивании, которая ценится больше всего.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Урок 8 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="lesson8" class="accordion-toggle">
+                    <label for="lesson8" class="accordion-label">
+                        <span class="lesson-title">Урок <span class="lesson--title--number">8.</span> Пучок. Как быстро и правильно оформить тебя, дружок?</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>Освоим несколько техник быстрого формирования ровного и аккуратного пучка без растрепывания. <br>Разберем частые ошибки при работе с объемом, которые приводят к склейкам и дискомфорту. <br>Научимся правильно подбирать пучки по длине и изгибу для создания гармоничного и естественного взгляда.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Урок 9 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="lesson9" class="accordion-toggle">
+                    <label for="lesson9" class="accordion-label">
+                        <span class="lesson-title">Урок <span class="lesson--title--number">9.</span> Наращиваем объёмы 2D+</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>Узнаем, как работать с несколькими ресничками одновременно, сохраняя идеальную изоляцию и легкость. <br>Разберем схемы постановки объемов для разных форм глаз, чтобы результат выглядел опрятно. <br>Научимся контролировать расход материалов и время процедуры, чтобы работа с объемами была рентабельной.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list__lessons__content--items">
+                <a href="#pricing" class="button__for-whom" aria-label="Sign up">Предзапись</a>
+                <p class="list__lessons__desc">Все еще думаешь? <br> А места разбирают уже сейчас</p>
+                <img src="./images/main/super_woman.png" alt="Супер-девушка" class="super__woman--images" loading="lazy" decoding="async" width="243" height="243">
+            </div>
+        </div>
+    </section>
+
+    <!-- Тарифы -->
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing__content">
+                <h2 class="pricing__title">Тарифы участия</h2>
+            </div>
+            <div class="pricing__content--item">
+                <div class="pricing__content__card--wrapper">
+                    <div class="pricing__content--card" id="pricing">
+                        <h3 class="pricing__content__card--title">Lite (самостоятельный)</h3>
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> 9 подробных уроков</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> 9 заданий на построение скоростной работы</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> чат с единомышленниками</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> дополнительный урок: личный бренд для бьюти-сферы</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">-</span> <s>2 мастермаинда с Юлией Ворман</s></p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">-</span> <s>личное ведение от Юлии Ворман</s></p>
+
+                        <p class="pricing__content--duration">Длительность: 14 дней</p>
+                        <div class="pricing__price-block">
+                            <p class="pricing__content--condition">Каждые <span class="pricing__content__condition--span"> 20 оплат</span> + 1111 Р.</p>
+                            <p class="pricing__content--price"><strong>6666 Р.</strong></p>
+                        </div>
+                        <div class="pricing__button-spacer"><a href="pre_recording.html?tariff=lite" class="pricing__content--button" target="_blank">Предзапись</a></div>
+                        <img src="./images/pricing_plans/woman_with-class-face.png" alt="woman_with-class-face" class="pricing__content--images" loading="lazy" width="128" height="128" decoding="async">
+                    </div>
+
+                    <div class="pricing__content--card">
+                        <h3 class="pricing__content__card--title">Plus (с куратором)</h3>
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> 9 подробных уроков</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> 9 заданий на построение скоростной работы</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> чат с единомышленниками</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> дополнительный урок: личный бренд для бьюти-сферы</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> 2 мастермаинда с Юлией Ворман</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">-</span> <s>личное ведение от Юлии Ворман</s></p>
+
+                        <p class="pricing__content--duration">Длительность: 14 дней</p>
+                        <div class="pricing__price-block">
+                            <p class="pricing__content--condition">Каждые <span class="pricing__content__condition--span"> 20 оплат</span> + 1111 Р.</p>
+                            <p class="pricing__content--price"><strong>11111 Р.</strong></p>
+                        </div>
+                        <div class="pricing__button-spacer"><a href="pre_recording.html?tariff=plus" class="pricing__content--button" target="_blank">Предзапись</a></div>
+                        <img src="./images/pricing_plans/woman_with-heart-eyes.png" alt="woman_with-heart-eyes" class="pricing__content--images" loading="lazy" decoding="async" width="128" height="128">
+                    </div>
+
+                    <div class="pricing__content--card">
+                        <h3 class="pricing__content__card--title">Bomba (с Юлией Ворман)</h3>
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> 9 подробных уроков</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> 9 заданий на построение скоростной работы</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> чат с единомышленниками</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> дополнительный урок: личный бренд для бьюти-сферы</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> 3 мастермаинда с Юлией Ворман</p>
+
+                        <p class="pricing__content--desc"><span class="pricing__content--span">+</span> личное ведение от Юлии Ворман</p>
+
+                        <p class="pricing__content--duration">Длительность: 14 дней</p>
+                        <div class="pricing__price-block">
+                            <p class="pricing__content--condition">Каждые <span class="pricing__content__condition--span"> 20 оплат</span> + 1111 Р.</p>
+                            <p class="pricing__content--price"><strong>33333 Р.</strong></p>
+                        </div>
+                        <div class="pricing__button-spacer"><a href="pre_recording.html?tariff=bomba" class="pricing__content--button" target="_blank">Предзапись</a></div>
+    
+                        <img src="./images/pricing_plans/woman_with-star_stuck-face.png" alt="woman_with-star_stuck-face" class="pricing__content--images" loading="lazy" decoding="async" width="128" height="128" decoding="async">
+                    </div>
+                </div>
+            </div>
+            <div class="pricing__content--stories">
+                <img src="./images/pricing_plans/gift.png" alt="Gift" class="pricing__content__images--gift" loading="lazy" decoding="async" width="66" height="66">
+                <p class="pricing__content__stories--text">Идёте на интенсив? Выложите об этом сториз-шаблон с отметкой Юлии Ворман и вас будет ждать розыгрыш дополнительного подарка!</p>
+                
+                <div class="container__stories">
+                    <a href="https://vk.com/uliavorman" class="btn__stories" aria-label="Stories-pattern" target="_blank">сториз-шаблон</a>
+                    <a href="https://web.telegram.org/a/#382155805" class="short__name" target="_blank">@ULIAVORMAN</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- А такие вопросы могут возникнуть у вас -->
+    <section class="questions">
+        <div class="container">
+            <div class="questions__content">
+                <h2 class="questions__title">А такие вопросы могут быть у вас</h2>
+            </div>
+
+            <div class="questions__accordion" id="list__questions">
+                
+                <!-- Вопрос 1 -->
+                <hr class="accordion-item1">
+                <div class="accordion-item">
+                    <input type="checkbox" id="question1" class="accordion-toggle">
+                    <label for="question1" class="accordion-label">
+                        <span class="question-title">Я точно всему научусь? У меня получится?</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>Да, конечно, если будешь выполнять все домашние задания в моменте, так же будешь действовать всем указаниям, потому что все очень важно. Так же мы поможем и направим для поисков своего предназначения с помощью нашего ведущего астролога.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Вопрос 2 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="question2" class="accordion-toggle">
+                    <label for="question2" class="accordion-label">
+                        <span class="question-title">Как я буду учиться скоростному наращиванию онлайн?</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>Обучение проходит онлайн в личном кабинете: изучаешь уроки, выполняешь практические задания на моделях и отправляешь нам на проверку. Мы даем обратную связь, исправляем ошибки и помогаем на каждом этапе. Для результата важно следовать рекомендациям и делать задания вовремя. Дополнительно поддержим твое развитие через консультации астролога для раскрытия потенциала.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Вопрос 3 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="question3" class="accordion-toggle">
+                    <label for="question3" class="accordion-label">
+                        <span class="question-title">Сколько времени будет уходить на выполнение дз?</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>На каждый урок, для выполнения дз будут предоставлены сутки.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Вопрос 4 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="question4" class="accordion-toggle">
+                    <label for="question4" class="accordion-label">
+                        <span class="question-title">Как часто будут выходить уроки?</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>Каждый урок будет выходить в 12:00 (мск) Каждый день.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Вопрос 5 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="question5" class="accordion-toggle">
+                    <label for="question5" class="accordion-label">
+                        <span class="question-title">Какая техника будет отрабатываться: ручная или ленточная?</span>
+                        <span class="icon"></span>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="content-wrapper">
+                            <p>Отрабатывается ручная техника — это золотой стандарт для качественного и долговечного наращивания. Ленточная техника (пучками) изучается отдельно как дополнительный навык, но в основе обучения — мастерство ручного Volume. Такой подход гарантирует безупречный результат и профессиональный рост.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="for-whom__content--items">
+                <a href="https://web.telegram.org/a/#382155805" target="_blank"><i class='bx bxl-telegram'></i></a>
+                <p class="questions__text">У вас есть другой вопрос? Напишите мне в телеграм</p>
+                <a href="https://web.telegram.org/a/#382155805" class="button__for-whom" aria-label="Write" target="_blank">Написать</a>
+                <img src="./images/main/super_woman.png" alt="Супер-девушка" class="super__woman--images" loading="lazy"
+                width="243" height="243" decoding="async">
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <!-- Левый блок -->
+                <div class="footer__content--item">
+                    <a href="index.html" class="footer__logo">Юлия Ворман</a>
+                    <p class="inn">ИНН:</p>
+                    <p class="ORRNIP">ОГРНИП:</p>
+                </div>
+
+                <!-- Центральный блок со стрелкой и иконками -->
+                <div class="footer__center">
+                    <!-- Стрелка вверх -->
+                    <div class="up__button">
+                        <a href="#header" class="up__link">
+                            <i class='bx bx-up-arrow-alt'></i>
+                        </a>
+                    </div>
+                
+                    <!-- Иконки соцсетей -->
+                    <div class="social__icons">
+                        <a href="https://web.telegram.org/a/#382155805" class="telegram" target="_blank">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg fill="#FFFFFF" width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z"/>
+                            </svg>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@ulia_vorman?_t=ZS-8zpLGeSIM48&_r=1" class="tik_tok" target="_blank">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg width="20px" height="20px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.45095 19.7926C8.60723 18.4987 9.1379 17.7743 10.1379 17.0317C11.5688 16.0259 13.3561 16.5948 13.3561 16.5948V13.2197C13.7907 13.2085 14.2254 13.2343 14.6551 13.2966V17.6401C14.6551 17.6401 12.8683 17.0712 11.4375 18.0775C10.438 18.8196 9.90623 19.5446 9.7505 20.8385C9.74562 21.5411 9.87747 22.4595 10.4847 23.2536C10.3345 23.1766 10.1815 23.0889 10.0256 22.9905C8.68807 22.0923 8.44444 20.7449 8.45095 19.7926ZM22.0352 6.97898C21.0509 5.90039 20.6786 4.81139 20.5441 4.04639H21.7823C21.7823 4.04639 21.5354 6.05224 23.3347 8.02482L23.3597 8.05134C22.8747 7.7463 22.43 7.38624 22.0352 6.97898ZM28 10.0369V14.293C28 14.293 26.42 14.2312 25.2507 13.9337C23.6179 13.5176 22.5685 12.8795 22.5685 12.8795C22.5685 12.8795 21.8436 12.4245 21.785 12.3928V21.1817C21.785 21.6711 21.651 22.8932 21.2424 23.9125C20.709 25.246 19.8859 26.1212 19.7345 26.3001C19.7345 26.3001 18.7334 27.4832 16.9672 28.28C15.3752 28.9987 13.9774 28.9805 13.5596 28.9987C13.5596 28.9987 11.1434 29.0944 8.96915 27.6814C8.49898 27.3699 8.06011 27.0172 7.6582 26.6277L7.66906 26.6355C9.84383 28.0485 12.2595 27.9528 12.2595 27.9528C12.6779 27.9346 14.0756 27.9528 15.6671 27.2341C17.4317 26.4374 18.4344 25.2543 18.4344 25.2543C18.5842 25.0754 19.4111 24.2001 19.9423 22.8662C20.3498 21.8474 20.4849 20.6247 20.4849 20.1354V11.3475C20.5435 11.3797 21.2679 11.8347 21.2679 11.8347C21.2679 11.8347 22.3179 12.4734 23.9506 12.8889C25.1204 13.1864 26.7 13.2483 26.7 13.2483V9.91314C27.2404 10.0343 27.7011 10.0671 28 10.0369Z" fill="#EE1D52"/>
+                                <path d="M26.7009 9.91314V13.2472C26.7009 13.2472 25.1213 13.1853 23.9515 12.8879C22.3188 12.4718 21.2688 11.8337 21.2688 11.8337C21.2688 11.8337 20.5444 11.3787 20.4858 11.3464V20.1364C20.4858 20.6258 20.3518 21.8484 19.9432 22.8672C19.4098 24.2012 18.5867 25.0764 18.4353 25.2553C18.4353 25.2553 17.4337 26.4384 15.668 27.2352C14.0765 27.9539 12.6788 27.9357 12.2604 27.9539C12.2604 27.9539 9.84473 28.0496 7.66995 26.6366L7.6591 26.6288C7.42949 26.4064 7.21336 26.1717 7.01177 25.9257C6.31777 25.0795 5.89237 24.0789 5.78547 23.7934C5.78529 23.7922 5.78529 23.791 5.78547 23.7898C5.61347 23.2937 5.25209 22.1022 5.30147 20.9482C5.38883 18.9122 6.10507 17.6625 6.29444 17.3494C6.79597 16.4957 7.44828 15.7318 8.22233 15.0919C8.90538 14.5396 9.6796 14.1002 10.5132 13.7917C11.4144 13.4295 12.3794 13.2353 13.3565 13.2197V16.5948C13.3565 16.5948 11.5691 16.028 10.1388 17.0317C9.13879 17.7743 8.60812 18.4987 8.45185 19.7926C8.44534 20.7449 8.68897 22.0923 10.0254 22.991C10.1813 23.0898 10.3343 23.1775 10.4845 23.2541C10.7179 23.5576 11.0021 23.8221 11.3255 24.0368C12.631 24.8632 13.7249 24.9209 15.1238 24.3842C16.0565 24.0254 16.7586 23.2167 17.0842 22.3206C17.2888 21.7611 17.2861 21.1978 17.2861 20.6154V4.04639H20.5417C20.6763 4.81139 21.0485 5.90039 22.0328 6.97898C22.4276 7.38624 22.8724 7.7463 23.3573 8.05134C23.5006 8.19955 24.2331 8.93231 25.1734 9.38216C25.6596 9.61469 26.1722 9.79285 26.7009 9.91314Z" fill="#000000"/>
+                                <path d="M4.48926 22.7568V22.7594L4.57004 22.9784C4.56076 22.9529 4.53074 22.8754 4.48926 22.7568Z" fill="#69C9D0"/>
+                                <path d="M10.5128 13.7916C9.67919 14.1002 8.90498 14.5396 8.22192 15.0918C7.44763 15.7332 6.79548 16.4987 6.29458 17.354C6.10521 17.6661 5.38897 18.9168 5.30161 20.9528C5.25223 22.1068 5.61361 23.2983 5.78561 23.7944C5.78543 23.7956 5.78543 23.7968 5.78561 23.798C5.89413 24.081 6.31791 25.0815 7.01191 25.9303C7.2135 26.1763 7.42963 26.4111 7.65924 26.6334C6.92357 26.1457 6.26746 25.5562 5.71236 24.8839C5.02433 24.0451 4.60001 23.0549 4.48932 22.7626C4.48919 22.7605 4.48919 22.7584 4.48932 22.7564V22.7527C4.31677 22.2571 3.95431 21.0651 4.00477 19.9096C4.09213 17.8736 4.80838 16.6239 4.99775 16.3108C5.4985 15.4553 6.15067 14.6898 6.92509 14.0486C7.608 13.4961 8.38225 13.0567 9.21598 12.7484C9.73602 12.5416 10.2778 12.3891 10.8319 12.2934C11.6669 12.1537 12.5198 12.1415 13.3588 12.2575V13.2196C12.3808 13.2349 11.4148 13.4291 10.5128 13.7916Z" fill="#69C9D0"/>
+                                <path d="M20.5438 4.04635H17.2881V20.6159C17.2881 21.1983 17.2881 21.76 17.0863 22.3211C16.7575 23.2167 16.058 24.0253 15.1258 24.3842C13.7265 24.923 12.6326 24.8632 11.3276 24.0368C11.0036 23.823 10.7187 23.5594 10.4844 23.2567C11.5962 23.8251 12.5913 23.8152 13.8241 23.341C14.7558 22.9821 15.4563 22.1734 15.784 21.2774C15.9891 20.7178 15.9864 20.1546 15.9864 19.5726V3H20.4819C20.4819 3 20.4315 3.41188 20.5438 4.04635ZM26.7002 8.99104V9.9131C26.1725 9.79263 25.6609 9.61447 25.1755 9.38213C24.2352 8.93228 23.5026 8.19952 23.3594 8.0513C23.5256 8.1559 23.6981 8.25106 23.8759 8.33629C25.0192 8.88339 26.1451 9.04669 26.7002 8.99104Z" fill="#69C9D0"/>
+                            </svg>
+                        </a>
+
+                        <a href="https://vk.com/uliavorman" class="vk" target="_blank">
+                            <i class='bx bxl-vk'></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/@uliavorman" class="youtube" target="_blank">
+                            <i class='bx bxl-youtube'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Правый блок -->
+                <div class="footer__contracts">
+                    <a href="index.html" class="political__confidencial">Политика конфиденциальности</a>
+                    <a href="index.html" class="oferta">Договор-оферта</a>
+                    <a href="index.html" class="hire__me">Связаться с нами</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Файлы Cookie -->
+    <input type="checkbox" id="cookie-toggle" class="cookie-toggle">
+    
+    <div class="cookie__notifications">
+        <div class="container">
+            <div class="cookie__content">
+                <i class='bx bxs-cookie' style='color:#fdb400'></i>
+                <p class="cookie__text">Мы используем файлы cookie и рекомендательные технологии для улучшения вашего опыта на сайте.</p>
+            </div>
+            
+            <div class="cookie__container--label">
+                <label for="cookie-toggle" class="cookie__accept">Принять</label>
+                <label for="cookie-toggle" class="cookie__decline">Отклонить</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- ДОКУМЕНТАЦИЯ -->
+    <a href="./docs/Users_Guide.pdf" target="_blank" class="doc_toggle--btn" aria-label="Руководство пользователя"><i class='bx bx-file'></i></a>
+
+    <script src="./js/script.js"></script>
+
+    <!-- <script>
+    document.documentElement.classList.add("no-scroll");
+    document.body.classList.add("no-scroll");
+
+    window.addEventListener("load", function () {
+        setTimeout(function () {
+            document.documentElement.classList.remove("no-scroll");
+            document.body.classList.remove("no-scroll");
+        }, 4500);
+    });
+    </script> -->
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const preloader = document.querySelector(".preloader");
+        if (!preloader) return;
+
+        document.documentElement.classList.add("no-scroll");
+        document.body.classList.add("no-scroll");
+
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.documentElement.classList.remove("no-scroll");
+                document.body.classList.remove("no-scroll");
+            }, 4500);
+        });
+    });
+    </script>
+</body>
+</html>

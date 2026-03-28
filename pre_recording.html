@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- Для iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Для Android -->
+    <meta name="theme-color" content="#4C3D74" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#4C3D74" media="(prefers-color-scheme: dark)">
+
+    <title>Онлайн-интенсив по наращиванию ресниц</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./images/icons/favicon.svg" />
+    <link rel="shortcut icon" href="./images/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="./images/icons/site.webmanifest" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <form class="form" id="pre-recording-form">
+    
+    <!-- Скрытое поле для тарифа -->
+    <input type="hidden" name="tariff" id="tariff-field">
+    
+    <div class="form__container">
+        <div class="form__tabs--recording">
+            <h3 class="form__tabs-recording--title">
+                Предварительная запись на интенсив по скоростному наращиванию ресниц
+            </h3>
+        </div>
+            
+        <div class="form__container--group">
+            <div class="form__field">
+                <label for="name" class="label">Имя</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form__field">
+                <label for="surname" class="label">Фамилия</label>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+
+            <div class="form__field">
+                <label for="email" class="label">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form__field">
+                <label for="telephone" class="label">Телефон</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </div>
+
+            <div class="form__field">
+                <label for="telegram-username" class="label">Укажи ник в Telegram</label>
+                <input type="text" id="telegram-username" name="telegram_username" required>
+            </div>
+
+            <label for="policy-agreement" class="remembers__me">
+                <input type="checkbox" id="policy-agreement" name="policy-agreement" required class="checkbox">
+                Ознакомлен(а) с текстом Политики обработки персональных данных
+            </label>
+
+            <label for="age-agreement" class="remembers__me">
+                <input type="checkbox" id="age-agreement" name="age-agreement" required class="checkbox">
+                Мне есть 18 лет, и я даю Согласие на обработку моих персональных данных
+            </label>
+        </div>
+
+        <button type="submit" class="btn__pre--recording" aria-label="pre_recording">Предзапись</button>
+    </div>
+</form>
+
+<!-- Модалка -->
+<div class="modal-overlay" id="success-modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal__close" type="button" aria-label="Закрыть">×</button>
+
+        <div class="form__success">
+            <h3 class="form__success-title">Заявка принята ✅</h3>
+            <p class="form__success-text">Перейдите в Telegram-бота и отправьте код подтверждения:</p>
+
+            <div class="form__code-wrapper">
+                <div class="form__code" id="confirm-code">000000</div>
+                <a href="https://t.me/Lash_course_bot" target="_blank" class="form__bot-btn">Перейти в бота</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="result-container"></div>
+
+<script src="js/script.js"></script>
+<script src="js/modal.js"></script>
+</body>
+</html>
