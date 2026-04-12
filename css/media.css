@@ -330,7 +330,7 @@
     .banner::before {
         content: '';
         position: absolute;
-        top: -128px;
+        top: -131px;
         left: 0;
         width: 100%;
         height: calc(100% + 128px);
